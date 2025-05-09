@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-teal-500 via-purple-600 to-black text-[--foreground] font-sans;
+}
+
+a {
+  @apply text-teal-300 hover:underline transition duration-150;
+}
+
+button {
+  @apply rounded-2xl px-4 py-2 bg-purple-600 text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-300;
+}
+
+@keyframes fade-in-scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-scroll {
+  animation: fade-in-scroll 0.8s ease-out both;
+}
