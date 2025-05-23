@@ -15,7 +15,8 @@
 }
 
 body {
-  @apply bg-gradient-to-br from-teal-500 via-purple-600 to-black text-[--foreground] font-sans;
+  @apply bg-gradient-to-br from-teal-500 via-purple-600 to-black font-sans;
+  color: var(--foreground);
 }
 
 a {

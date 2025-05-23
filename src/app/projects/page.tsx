@@ -8,7 +8,7 @@ export default function ProjectsPage() {
         <ProjectCard
           title="Portfolio Website"
           description="This responsive site using Next.js + Tailwind CSS."
-          link="https://github.com/Renn3506/portfolio"
+          link="https://github.com/Renn3506/my-portfolio-website"
         />
       </div>
     </section>
